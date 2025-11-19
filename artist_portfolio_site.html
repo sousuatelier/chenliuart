@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+    }
+
+    /* Hero */
+    .hero {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #eee;
+      font-size: 28px;
+      letter-spacing: 0.05em;
+    }
+
+    /* Section */
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .thumb {
+      background: #ddd;
+      height: 200px;
+    }
+
+    .project-block {
+      margin-bottom: 60px;
+    }
+
+    .about-text {
+      max-width: 700px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #ccc;
+      margin-top: 80px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Artist Name</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#photography">Photography</a>
+      <a href="#experiment">Experiment</a>
+      <a href="#installation">Installation</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="home" class="hero">
+    Modern Minimal Aesthetic × Traditional Elegance
+  </div>
+
+  <!-- Photography -->
+  <section id="photography">
+    <h2>Photography</h2>
+
+    <div class="project-block">
+      <h3>Photography Project 1</h3>
+      <div class="grid">
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <h3>Photography Project 2</h3>
+      <div class="grid">
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <h3>Photography Project 3</h3>
+      <div class="grid">
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+        <div class="thumb"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiment -->
+  <section id="experiment">
+    <h2>Experiment</h2>
+    <div class="grid">
+      <div class="thumb"></div>
+      <div class="thumb"></div>
+      <div class="thumb"></div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section id="installation">
+    <h2>Installation Series</h2>
+    <div class="grid">
+      <div class="thumb"></div>
+      <div class="thumb"></div>
+      <div class="thumb"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-text">
+      <p>
+        This is a placeholder for your artist biography. You may introduce your practice, themes, processes, and conceptual background here. The tone may remain minimal, calm, and influenced by both contemporary and traditional aesthetics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@example.com</p>
+    <p>Instagram: @yourhandle</p>
+  </section>
+
+  <footer>
+    © Your Name — Portfolio
+  </footer>
+</body>
+</html>
